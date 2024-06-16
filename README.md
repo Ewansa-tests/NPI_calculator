@@ -17,3 +17,43 @@ Ce projet implémente une API de calculatrice en Notation Polonaise Inversée (N
 - **SQLite** : Base de données relationnelle légère utilisée pour le stockage des données.
 - **pytest** : Cadre de test utilisé pour les tests unitaires.
 - **Docker** : Outil de conteneurisation utilisé pour le déploiement.
+
+## Exécution de l'Application
+
+1. Initialisez la base de données SQLite :
+
+    ```bash
+    python main.py
+    ```
+
+2. Lancez le serveur FastAPI :
+
+    ```bash
+    uvicorn main:app --reload
+    ```
+
+3. Accédez à l'API dans votre navigateur à l'adresse [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) pour voir l'interface Swagger.
+
+## Exécution des Tests
+
+Lancez les tests unitaires avec pytest :
+
+```bash
+pytest
+```
+
+## Déploiement avec Docker
+
+1. Construisez l'image Docker :
+
+    ```bash
+    docker-compose build
+    ```
+
+2. Lancez le conteneur Docker :
+
+    ```bash
+    docker-compose up
+    ```
+
+3. Accédez à l'API à l'adresse [http://localhost:8000/docs](http://localhost:8000/docs).
