@@ -1,0 +1,13 @@
+uvicorn main:app --reload
+
+docker-compose build
+
+docker-compose up
+
+docker images
+
+docker ps
+
+Invoke-WebRequest -Uri "http://127.0.0.1:8000/recup" -OutFile "calculator_records.csv"
+
+pytest
